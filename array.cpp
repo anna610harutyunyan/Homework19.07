@@ -29,7 +29,7 @@ public:
 		}
 		this->m_size = other.m_size;
 		delete[] this->ptr;
-		this->ptr = new int[m_size];
+		this->ptr = new T[m_size];
 		for (int i = 0; i < m_size; ++i)
 		{
 			ptr[i] = other.ptr[i];

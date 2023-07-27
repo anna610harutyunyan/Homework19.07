@@ -14,7 +14,7 @@ public:
 	Array<T>(const Array<T>& obj)
 	{
 		this->m_size = obj.m_size;
-		this->ptr = obj.ptr;
+		this->ptr = new T[m_size];
 		for (int i = 0; i < m_size; ++i)
 		{
 			ptr[i] = obj.ptr[i];
